@@ -1,0 +1,138 @@
+body {
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+.header-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 8px;
+    gap: 36px;
+}
+
+.left-side {
+    max-width: 480px;
+}
+
+#img-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #eeeeee;
+}
+
+/* INFO SECTION */
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-cards {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.card {
+    width: 150px;
+}
+
+.box {
+    border: solid blue 4px;
+    height: 150px;
+    width: 150px;
+    border-radius: 18px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.info-section h2 {
+    text-align: center;
+    margin: 24px;
+}
+
+/* QUOTE SECTION */
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+
+#quote {
+    align-self: center;
+    width: 700px;
+    min-width: 500px;
+}
+
+.quote-section p {
+    align-self: flex-end;
+}
+
+/* CTA SECTION */
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-card {
+    width: 600px;
+    height: 150px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 68);
+}
+
+footer p {
+    color: white;
+}
