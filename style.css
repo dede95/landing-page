@@ -1,11 +1,20 @@
 body {
-    /* height: 100vh; */
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+button {
+    /* get rid of default html button styling */
+    color: inherit;
+	border: none;
+    width: 100px;
+    padding: 4px 16px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 2px;
 }
 
 /* HEADER */
@@ -13,7 +22,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: #eeeeee;
+    background-color: #1F2937;
     margin: 0;
 }
 
@@ -35,8 +44,14 @@ header {
 
 a {
     text-decoration: none;
-    color: cadetblue;
+    color: #E5E7EB;
 }
+
+p#logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-top: 12px 0px;
+}   
 
 /* HERO SECTION */
 
@@ -44,20 +59,42 @@ a {
     display: flex;
     justify-content: center;
     margin: 0;
+    background-color: #1F2937;
 }
 
 .hero-content {
     display: flex; 
     justify-content: space-between;
+    align-items: center;
     padding: 48px 16px;
     gap: 4px;
     width: 1000px;
     flex-wrap: wrap-reverse;
 }
 
-.left-side {
+.hero-content #hero-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero-content .left-side {
+    display: flex;
+    flex-direction: column;
     max-width: 480px;
     flex: 0 1 auto;
+    gap: 16px;
+}
+
+.left-side p {
+    margin: 0;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.left-side button {
+    flex-grow: 0; 
 }
 
 #img-placeholder {
@@ -73,7 +110,15 @@ a {
     display: flex;
     justify-content: center;
     margin: 0;
-    background-color: lightblue;
+    padding: 36px 0px;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-top: 0px;
+    text-align: center;
 }
 
 .info-content {
@@ -82,8 +127,6 @@ a {
     width: 1000px;
     padding: 0px 16px;
     /* flex: 0 1 auto; */
-
-
 }
 
 .info-cards {
@@ -112,20 +155,19 @@ a {
 
 .card p {
     text-align: center;
+    font-size: 18px;
 }
 
-.info-section h2 {
-    text-align: center;
-    margin: 24px;
-}
+
 
 /* QUOTE SECTION */
 
 .quote-section {
     display: flex;
-    background-color: #eeeeee;
+    background-color: #E5E7EB;
     justify-content: center;
     align-items: center;
+    padding: 72px 0px;
 }
 
 .quote-content {
@@ -139,14 +181,21 @@ a {
 #quote {
     align-self: center;
     /* width: 600px; */
+    margin-top: 0px;
     margin-bottom: 4px;
     flex: 0 1 auto;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
 }
 
 .quote-section p {
     text-align: right;
     margin-top: 4px;
+    margin-bottom: 0px;
     font-weight: 200;
+    font-size: 18px;
+    color: #1F2937;
 }
 
 /* CTA SECTION */
@@ -160,7 +209,7 @@ a {
 .cta-card {
     width: 1000px;
     height: 150px;
-    background-color: lightskyblue;
+    background-color: #3882F6;
     display: flex;
     flex: 0 1 auto;
     justify-content: space-around;
@@ -174,9 +223,19 @@ a {
     margin-left: 24px;
 }
 
-button {
+.cta-card #cta {
+    color: #F9FAF8;
+}
+
+.cta-card p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.cta-card button {
     flex-shrink: 0;
     margin-right: 24px;
+    outline: #E5E7EB 2px solid;
 }
 
 /* FOOTER */
@@ -184,10 +243,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(26, 26, 68);
+    background-color: #1F2937;
     height: 80px;
 }
 
 footer p {
     color: white;
+    font-size: 18px;
 }
+
