@@ -12,10 +12,16 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     background-color: #eeeeee;
     margin: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
 }
 
 .header-links {
@@ -34,10 +40,17 @@ a {
 /* HERO SECTION */
 
 .hero-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.hero-content {
     display: flex; 
-    justify-content: space-evenly;
-    padding: 8px;
+    justify-content: space-between;
+    padding: 48px 0px;
     gap: 36px;
+    width: 1000px;
 }
 
 .left-side {
@@ -54,7 +67,16 @@ a {
 
 .info-section {
     display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: lightblue;
+}
+
+.info-content {
+    display: flex;
     flex-direction: column;
+    width: 1000px;
+
 }
 
 .info-cards {
@@ -75,7 +97,7 @@ a {
     border: solid blue 4px;
     height: 150px;
     width: 150px;
-    border-radius: 18px;
+    border-radius: 8px;
 }
 
 .card p {
@@ -93,6 +115,12 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-content {
+    justify-content: space-between;
 }
 
 #quote {
@@ -110,15 +138,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 48px 64px;
 }
 
 .cta-card {
-    width: 600px;
+    width: 1000px;
     height: 150px;
     background-color: lightskyblue;
     display: flex;
+    flex: 0 1 auto;
     justify-content: space-around;
     align-items: center;
+    border-radius: 8px;
+    gap: 16px;
+    
 }
 
 button {
@@ -131,6 +164,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgb(26, 26, 68);
+    height: 80px;
 }
 
 footer p {
