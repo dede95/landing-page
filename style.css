@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Lora, serif;
+
+}
+
+button {
+    /* get rid of default html button styling */
+    color: inherit;
+	border: none;
+    width: 100px;
+    padding: 8px 16px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    padding: 8px 16px;
+    gap: 16px;
+}
+
+.header-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* flex-shrink: 0; */
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+p#logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-top: 12px 0px;
+    font-family: Ubuntu, sans-serif;
+    flex-shrink: 0;
+}   
+
+/* HERO SECTION */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #1F2937;
+}
+
+.hero-content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 16px;
+    gap: 4px;
+    width: 1000px;
+    flex-wrap: wrap-reverse;
+}
+
+.hero-content #hero-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0;
+    font-family: Ubuntu, sans-serif;
+}
+
+.hero-content .left-side {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    flex: 0 1 auto;
+    gap: 16px;
+}
+
+.left-side p {
+    margin: 0;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.left-side button {
+    flex-grow: 0; 
+}
+
+#img-placeholder {
+    width: 450px;
+    height: 200px;
+    background-color: #eeeeee;
+    flex: 0 0 auto;
+    /* Centre text in middle of div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* INFO SECTION */
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 36px 0px;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    padding: 0px 16px;
+    /* flex: 0 1 auto; */
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 0px 8px;
+    gap: 16px;
+    /* Wrap info cards */
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    border: solid blue 4px;
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+/* QUOTE SECTION */
+
+.quote-section {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+}
+
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 0px 16px;
+    
+}
+
+#quote {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 200;
+    align-self: center;
+    max-width: 630px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    flex: 0 1 auto;
+    color: #1F2937;
+    
+}
+
+.quote-section p {
+    text-align: right;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: 200;
+    font-size: 18px;
+    color: #1F2937;
+}
+
+/* CTA SECTION */
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 64px;
+}
+
+.cta-card {
+    width: 1000px;
+    height: 150px;
+    background-color: #3882F6;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    gap: 16px;
+    
+}
+
+.cta-card .left-text {
+    margin-left: 24px;
+}
+
+.cta-card #cta {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-size: 24px;
+    color: #F9FAF8;
+    margin: 0 0 16px 0;
+}
+
+.cta-card p {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin: 0;
+}
+
+.cta-card button {
+    flex-shrink: 0;
+    margin-right: 24px;
+    outline: #E5E7EB 2px solid;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    height: 80px;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+}
+
